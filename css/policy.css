@@ -1,0 +1,171 @@
+* {
+    font-family: 'Arimo', sans-serif;
+}
+
+p {
+    color: #9c9c9c;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: #1F2122;
+
+}
+
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 7.915567282321899vh;
+    width: 70%;
+    margin-left: 200px;
+}
+
+.logo {
+    margin-left: 4.625rem;
+    margin-right: auto;
+}
+
+.logo img {
+    height: 100px;
+    width: 100px;
+}
+
+/*editing the search bar*/
+form {
+    background-color: #26292a;
+    border-radius: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    min-width: 19.020833333333334vw;
+    max-width: 200px;
+}
+
+::placeholder {
+    color: #9c9c9c;
+}
+
+input[type="text"] {
+    min-width: 19.020833333333334vw;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    padding: 0 10px;
+    font-size: 0.875rem;
+    color: #9c9c9c;
+}
+
+/*this was added for the sign-up page*/
+input[type="password"] {
+    width: 300px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    padding: 0 10px;
+    font-size: 0.875rem;
+    color: #9c9c9c;
+}
+
+/*the following is used to remove the white outline of the form box that appears when typing in it*/
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+li {
+    margin-right: 20px;
+}
+
+/*In order to make "Main" have the signature pinkish color we do the folowing*/
+li:first-child a {
+    color: #D62562;
+}
+
+a {
+    color: #9c9c9c;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* here follows the account container*/
+
+.account-container {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    background-color: #26292a;
+    border-radius: 50px;
+    padding: 6px;
+}
+
+.account-container .account {
+    padding: 2px;
+    color: #9c9c9c;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.account-container .avatar {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+
+/*From here on out, we are dealing with everything under the navbar*/
+
+main {
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-rectangle {
+    background-color: #26292A;
+    border-radius: 40px;
+    width: 70%;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.front-rectangle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #1F2122;
+    color: white;
+    border-radius: 40px;
+    width: 95%;
+    padding: 40px;
+}
+
+h1 span{
+    color: #D62562;
+}
+
+@media screen and (max-width: 992px) {
+    main {
+        
+        margin-left: 0px;
+    }
+
+    .nav-container {
+        display: none;
+    }
+}

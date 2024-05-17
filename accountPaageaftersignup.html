@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/accountPage.css">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap'); </style>
+    <title>Account</title>
+</head>
+
+<body>
+
+  <header>
+
+      <!--Here we start with the navigation bar for the acount page-->
+          <nav>
+
+              <div class="nav-container">
+
+                <a href="index.html" class="logo">
+                  <img src="images/logoFrame.png" alt="logo">
+                </a>
+
+                <!-- This for is for the search bar-->
+                <form>
+                  <input type="text" placeholder="Search...">
+                </form>
+
+                <ul>
+                  <li><a href="index.html">Main</a></li>
+                  <li><a href="eventPage2.html">Events</a></li>
+                  <li><a href="devices.html">Devices</a></li>
+                  <li><a href="policyPage.html">Policy</a></li>
+                </ul>
+
+                <!--Making a div out of account since it will be in the right corner contained in a box with an avatar next to it-->
+                <div class="account-container">
+                  <a href="accountPaageaftersignup.html" class="account">Account </a> 
+                  
+                </div>
+
+              </div>
+
+            </nav>
+
+  </header>
+
+  <!--Here on out it's everything under the-->
+  <main>
+
+    <div class="back-rectangle">
+
+      <div class="front-rectangle">
+
+        <div class="left-section">
+
+          <div class="avatar-container">
+            <div class="no-avatar">Edit Profile Picture</div>
+          </div>
+
+          <div class="profile-container">
+            
+            <span>Name:</span>
+            <div class="profile-item">
+            <input type="text" value="Bob Demo">
+            </div>
+
+            <span>E-mail:</span>
+            <div class="profile-item">
+              <input type="text" value="bob.demo@gmail.com">
+            </div>
+
+            <!--The text is too much, so it ends up not centering, will need to fix this later on-->
+            <span>About me:</span>
+            <div class="profile-item">
+              <input type="text" id="profile-value3">
+            </div>
+
+          </div>
+
+          <div class="log-out-button">
+            <a href="index.html">Log Out</a>
+          </div>
+        </div>
+
+        <!--the right side of the black square next to the border-->
+        <div class="right-section">
+
+          <h1>History</h1>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+</body>
+
+</html>

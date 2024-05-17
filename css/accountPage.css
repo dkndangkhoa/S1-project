@@ -1,0 +1,338 @@
+*{
+    font-family: 'Arimo', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    background-color: #1F2122;
+    
+}
+
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 7.915567282321899vh;
+    width: 99%;
+}
+  
+.logo {
+    margin-left: 4.625rem;
+    margin-right: auto;
+}
+  
+.logo img {
+    height: 50px;
+    width: 50px;
+}
+/*editing the search bar*/
+form {
+    background-color: #26292a;
+    border-radius: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    min-width: 19.020833333333334vw;
+    max-width: 200px;
+}
+
+::placeholder {
+    color: #9c9c9c;
+}
+  
+input[type="text"] {
+    min-width: 19.020833333333334vw;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    padding: 0 10px;
+    font-size: 0.875rem;
+    color: #9c9c9c;
+}
+
+
+/*the following is used to remove the white outline of the form box that appears when typing in it*/
+textarea:focus, input:focus{
+    outline: none;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+  
+li {
+    margin-right: 20px;
+}
+  
+/*In order to make "Main" have the signature pinkish color we do the folowing*/
+li:first-child a {
+    color: #D62562;
+}
+
+a {
+    color: #9c9c9c;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* here follows the account container*/
+
+.account-container {
+    display: flex;
+    align-items: center;
+    margin-right: 90px;
+    margin-left: 20px;
+    background-color: #26292a;
+    border-radius: 50px;
+    padding: 6px;
+}
+  
+.account-container .account {
+    padding: 2px;
+    color: #9c9c9c;
+    text-decoration: none;
+    margin-right: 5px;
+}
+  
+.account-container .avatarup {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+
+
+/*From here on out, we are dealing with everything under the navbar*/
+
+main {
+    margin: 0;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-rectangle {
+    background-color: #26292A;
+    border-radius: 40px;
+    width: 90%;
+    height: 99%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.front-rectangle {
+    background-color: #1F2122;
+    color: #9c9c9c;
+    border-radius: 40px;
+    width: 95%;
+    height: 90%;
+    display: flex;
+    
+}
+
+/* The black square could cut up into 8 parts, wanted the left part to be 3/8 (37.5%) of the black square with the right-section taking up the rest.
+Furthermore, the grey dividing line is made by only turning the right side of left-section into a border*/
+.left-section {
+    width: 37.5%;
+    border-right: #26292A solid 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    margin: 2em 0;  
+}
+
+.avatar-container {
+    margin: 10px;
+    width: 11rem;
+    height: auto;
+    display: flex;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 175px;
+    height: auto;
+    max-width: 100%;
+}
+
+/*for aftersignup*/
+.no-avatar {
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    max-width: 100%;
+    border: 1px #9c9c9c solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*end*/
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+
+.profile-item {
+    display: flex;
+    justify-content: center;
+    background-color: #26292a;
+    margin: 1rem;
+    border-radius: 30px;
+    width: 95%;
+    font-size: 1em;   
+}
+
+.profile-value {
+    margin: .5rem;
+    height: 3vh;
+}
+
+/*For the aftersignup*/
+.profile-item input{
+    text-align: center;
+    margin: .5rem;
+    height: 3vh;
+}
+
+#profile-value3 {
+    margin-top: 15px;
+    margin-left: 10px;
+    height: 15vh;
+    max-height: 15vh;
+    overflow-y: auto;
+}
+/*end*/
+
+/* Third container has it's own div since It will have more text inside than the rest*/
+.profile-value3 {
+    margin-top: 15px;
+    margin-left: 10px;
+    height: 15vh;
+    max-height: 15vh;
+    overflow-y: auto;
+}
+
+/*Start of everything to the right of the dividing line*/
+
+.right-section {
+    width: 62.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.history-container {
+    width: 90%;
+    height: 80%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*this is for the boxes*/
+.history-item {
+    background-color: #26292a;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+
+/*this container is for the imagebox and image*/
+.image-container {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.event-pic {
+    width: 84%;
+    height: auto; 
+    border-radius: 30px;
+    max-width: 100%;
+    margin: 15px;
+}
+
+/*in this container is where the text goes*/
+.info-container {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.info-container p {
+    color: #9c9c9c;
+    margin: 2px;
+}
+
+.log-out-button a {
+  display: block;
+  width: 80%;
+  padding: .5rem;
+  border-radius: 50px;
+  background-color: #BA2649;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+@media (max-width: 790px) {
+    /*Adjust the width of nav-container and align element center */
+    .nav-container {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .front-rectangle {
+    
+    display: flex;
+    
+}
+}
+
+@media (min-width: 1000px) {
+    /*Keep the width of nav-container to not change after 1000px*/
+    body {
+        min-width: 100vw;
+        margin: 0 auto;
+    }
+
+    form {
+        max-width: 200px;
+    }
+
+    form input[type="text"] {
+        max-width: 200px;
+        height: 30px;
+        border: none;
+        background-color: transparent;
+        padding: 0 10px;
+        font-size: 0.875rem;
+        color: #9c9c9c;
+    }
+
+}

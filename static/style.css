@@ -1,0 +1,773 @@
+/*
+The following code styles the layout and appearance of the website.
+It includes styles for the body element, the navigation menu, and various
+sections and elements within the body of the Main page.
+*/
+
+/* Reset default margins and padding for all elements */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* Set a default background color for the body */
+  background-color: #1F2122;
+
+}
+
+header {
+  max-width: 1200px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Set a light gray background color for cards */
+.lightgray {
+
+  background-color: #26292A;
+}
+
+/* Set the default background color for all div elements to transparent */
+div {
+  background-color: transparent;
+}
+
+.card>div {
+  position: relative;
+}
+
+/*
+Position a span element (which will contain a price) absolutely
+within a div element and style it
+*/
+.card>div span {
+  position: absolute;
+  bottom: 14px;
+  right: 15px;
+  border-radius: 40px;
+  padding: 10px;
+  color: white;
+}
+
+/* Style h2 elements with a white font color */
+h2 {
+  background-color: transparent;
+  color: white;
+  font-family: 'Arimo';
+  margin-left: 50px;
+  font-weight: 100;
+  width: 250px;
+  text-align: left;
+}
+
+/* Set the default font family for the body to Arimo */
+body {
+  font-family: Arimo;
+}
+
+/*
+Style elements with the class "card" and a descendant element
+with the class "cardImageBox"
+*/
+card.cardImageBox {
+  width: 50%;
+  border-color: white;
+  border-width: 3px;
+
+}
+
+/* Style the navigation menu */
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 7.915567282321899vh;
+  width: 99%;
+}
+
+.logo {
+  margin-left: 4.625rem;
+  margin-right: auto;
+}
+
+.logo img {
+  height: 100px;
+  width: 100px;
+  margin-left: -50px;
+}
+
+.searchImage {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+/*editing the search bar*/
+form {
+  background-color: #26292a;
+  border-radius: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  min-width: 19.020833333333334vw;
+  max-width: 150px;
+  display: flex;
+}
+
+::placeholder {
+  color: #9c9c9c;
+}
+
+
+
+input[type="text"] {
+  min-width: 19.020833333333334vw;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  padding: 0 10px;
+  font-size: 0.875rem;
+  color: #9c9c9c;
+}
+
+/*this was added for the sign-up page*/
+input[type="password"] {
+  width: 300px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  padding: 0 10px;
+  font-size: 0.875rem;
+  color: #9c9c9c;
+}
+
+/*the following is used to remove the white outline of the form box that appears when typing in it*/
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+li {
+  margin-right: 20px;
+}
+
+/*In order to make "Main" have the signature pinkish color we do the folowing*/
+li:first-child a {
+  color: #D62562;
+}
+
+a {
+  color: #9c9c9c;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* here follows the account container*/
+
+.account-container {
+  display: flex;
+  align-items: center;
+  
+  margin-left: 20px;
+  background-color: #26292a;
+  border-radius: 50px;
+  padding: 6px;
+}
+
+.account-container .account {
+  padding: 2px;
+  color: #9c9c9c;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.account-container .avatar {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+
+  a {
+    background-color: transparent;
+  }
+  
+  /* This section sets a maximum width for the container element and centers it on the page. It also sets a background color, border radius, and padding for the container. */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #26292A;
+    border-radius: 40px;
+    padding: 20px;
+  }
+  
+  /* This section sets the display, flex direction, alignment, and height for the banner element. It also sets the background image, size, position, margin, and border radius for the banner. */
+  .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    height: 400px;
+    
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+    border-radius: 40px;
+    background-image: linear-gradient(rgba(214, 37, 98, 0.1), rgba(0, 0, 0, 0.2)), url("../images/banner.jpeg");
+  }
+  
+  /* This section sets the font size, margin, color, font family, and font weight for the first h1 element within the banner element. */
+
+  .banner h1 {
+    font-size: 48px;
+    margin-bottom: 0px;
+    color: white;
+    background-color: transparent;
+    font-family: 'Arimo';
+    font-weight: bold;
+    margin-left: 50px;
+  }
+
+  
+  
+  /* This section sets the border, outline, background color, color, padding, font size, cursor, border radius, max width, and font family for the button element within the banner element. */
+  .banner button {
+    border: none;
+    outline: none;
+    background-color: #BA2649;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    max-width: 150px;
+    font-family: 'Arimo';
+    margin-left: 50px;
+    margin-top: 20px;
+  }
+
+  .banner a {
+    background-color: transparent;
+  }
+  
+  /* This section sets the padding, background color, border radius, and margin for the section element. It also sets the color for the p element within the section element. */
+  section {
+    padding: 20px;
+    background-color: #1F2122;
+    border-radius: 40px;
+    margin-bottom: 20px;
+    
+  }
+
+  .upcomingEvents {
+    display: table-caption;
+
+  }
+
+  .upcomingEvents.card-container {
+    width: 500px;
+  }
+
+.menu ul li {
+  margin-left: 20px;
+  background-color: transparent;
+}
+
+.menu li a {
+  color: #9C9C9C;
+  text-decoration: none;
+  font-size: 16px;
+  background-color: transparent;
+  padding: 5px;
+}
+
+a {
+  background-color: transparent;
+}
+
+/* This section sets a maximum width for the container element and centers it on the page. It also sets a background color, border radius, and padding for the container. */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #26292A;
+  border-radius: 40px;
+  padding: 20px;
+}
+
+/* This section sets the display, flex direction, alignment, and height for the banner element. It also sets the background image, size, position, margin, and border radius for the banner. */
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  height: 400px;
+
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+  border-radius: 40px;
+  /*background-image: url("/images/operaVillageInterior60.png");*/
+}
+
+
+/* This section sets the font size, margin, color, font family, and font weight for the first h1 element within the banner element. */
+
+
+
+
+/* This section sets the border, outline, background color, color, padding, font size, cursor, border radius, max width, and font family for the button element within the banner element. */
+.banner button {
+  border: none;
+  outline: none;
+  background-color: #BA2649;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+  max-width: 150px;
+  font-family: 'Arimo';
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+/* This section sets the padding, background color, border radius, and margin for the section element. It also sets the color for the p element within the section element. */
+section {
+  padding: 20px;
+  background-color: #1F2122;
+  border-radius: 40px;
+  margin-bottom: 20px;
+
+}
+
+/* This section sets the color for the p element within the section element. */
+section p {
+  color: white;
+  margin-left: 50px;
+  line-height: 25px;
+}
+
+/* This section sets the border, outline, background color, color, padding, font size, cursor, border radius, max width, and font family for the button element within the section element. */
+section button {
+  border: none;
+  outline: none;
+  background-color: #BA2649;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+  max-width: 150px;
+  font-family: 'Arimo';
+
+}
+
+/* This section sets the h1 element within the section element. */
+section h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: white;
+  font-family: 'Arimo';
+  font-weight: bold;
+  margin-left: 50px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  display: grid;
+  padding: 25px;
+  /*flex-wrap: wrap;*/
+  /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: space-between;
+}
+
+/*Card item*/
+.card {
+  /*width: calc(25% - 10px);*/
+  max-height: 400px;
+  margin-bottom: 20px;
+  border: 1px solid #26292A;
+  border-radius: 40px;
+  padding: 20px;
+}
+
+/*item in the list of events*/
+.eventListItem {
+  padding: 20px;
+  width: 1100px;
+  background-color: #26292A;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+  margin-top: 30px;
+  align-items: center;
+}
+
+/*text in the item of event list*/
+.eventListItem p {
+  background-color: transparent;
+  text-align: center;
+  color: #9c9c9c;
+  padding-right: 30px;
+}
+
+.eventListItem p1 {
+  background-color: transparent;
+  text-align: left;
+  width: 200px;
+  color: #9c9c9c;
+  padding: 0 20px;
+}
+
+.eventListItem img {
+  width:100px;
+  height: 100px;
+  border-radius: 40px;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 40px;
+  opacity: 60%;
+
+}
+
+.card h2 {
+  font-size: 18px;
+  margin: 10px;
+  color: #9C9C9C;
+  background-color: transparent;
+  font-family: 'Arimo';
+}
+
+.card p {
+  font-size: 14px;
+  margin: 10px;
+  color: #9C9C9C;
+  background-color: transparent;
+  font-family: 'Arimo';
+}
+
+.section-3 {
+  padding: 20px;
+  background-color: #26292A;
+  border-radius: 40px;
+}
+
+.section-3 h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: white;
+  background-color: transparent;
+  font-family: 'Arimo';
+}
+
+
+
+.section-3 .row {
+  width: calc(50% - 10px);
+  margin-bottom: 20px;
+}
+
+.section-3 .card {
+
+  margin-bottom: 20px;
+  border: 1px solid #333;
+}
+
+.section-3 .card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 40px;
+  background-color: transparent;
+}
+
+.section-3 .card h2 {
+  font-size: 18px;
+  margin: 10px;
+  color: #9C9C9C;
+  background-color: transparent;
+  font-family: 'Arimo';
+}
+
+.section-3 .card p {
+  font-size: 14px;
+  margin: 10px;
+  color: #9C9C9C;
+  font-family: 'Arimo';
+}
+
+.direction {
+  text-align: center;
+}
+
+.direction button {
+  font-family: cursive;
+  font-weight: bold;
+  background-color: #26292a;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: 0.5s;
+  margin: 0 10px;
+}
+
+.direction button:hover {
+  background-color: #ffffff;
+}
+
+img .avatar {
+  padding: 0px
+}
+
+.item {
+  border-radius: 40px;
+  width: 290px;
+  height: 50%;
+  background-color: #26292a;
+  overflow: hidden;
+  transition: 0.5s;
+  margin: 10px;
+  scroll-snap-align: start;
+  margin-left: 10px;
+}
+
+.item .avatar {
+  display: block;
+  margin: 50px auto 10px;
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.item .content {
+  padding: 30px;
+  background-color: transparent;
+}
+
+.item .content table td {
+  padding: 10px 0;
+  border-bottom: 1px solid #7e878d;
+  text-align: center;
+  color: #9C9C9C;
+  background-color: #26292a;
+
+}
+
+
+
+#list {
+  display: flex;
+  width: max-content;
+}
+
+#formList {
+  width: 1280px;
+  max-width: 100%;
+  overflow: auto;
+
+  scroll-behavior: smooth;
+  scroll-snap-type: both;
+}
+
+#formList::-webkit-scrollbar {
+  display: none;
+}
+
+.button1 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 992px) {
+
+  .banner h1 {
+    margin-left: 0px;
+  }
+
+  a {
+    font-size: 12px;
+  }
+
+  .searchImage {
+    display: none;
+  }
+
+  .logo img {
+    margin-left: -30px;
+  }
+
+  .accountcontainer {
+    background-color: #1F2122;
+    border-radius: 40px;
+    display: none;
+  }
+
+  .banner button {
+    margin-left: 0px;
+  }
+
+  .account-container .avatar {
+    display: none;
+  }
+
+  h2 {
+    margin-left: 0px;
+    text-align: center;
+    
+  }
+
+  .eventListItem {
+  margin-bottom: 20px;
+  border: 1px solid #26292A;
+  border-radius: 40px;
+  padding: 0px;
+  display: block;
+  width: 290px;
+  margin-left: 0px;
+  align-items: center;
+  }
+
+  .eventListItem img {
+    width: 250px;
+    height: 250px;
+    border-radius: 40px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .eventListItem h2 {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  .eventListItem p1 {
+    text-align: center;
+    margin-left: 70px;
+    margin-top: 20px;
+  }
+
+  .eventListItem p {
+    padding-right: 0px;
+  }
+
+  .card h2 {
+    margin-left: -2px;
+  }
+
+
+  section h1 {
+    margin-left: 0px;
+  }
+
+  section p {
+    margin-left: 0px;
+  }
+
+  .section-3 .row {
+    width: 100%;
+  }
+
+  .card p {
+    text-align: center;
+  }
+
+  nav {
+    width: calc(50% - 10px);
+    background-color: #26292A;
+  }
+
+  .nav-container {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  header {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 25px;
+    margin-left: 0px;
+    background-color: #26292A;
+    border-radius: 40px;
+  }
+
+  input {
+    display: none;
+  }
+  
+  ul {
+    background-color: #1F2122;    
+    border-radius: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  li {
+    border-radius: 40px;
+    padding: 10px;
+    background-color: #26292A;
+    margin-right: 10px;
+  }
+
+  a.account {
+    line-height: 30px;
+  }
+
+  a.account.account {
+    margin-right: 15px;
+    background-color: #26292A;
+    border-radius: 40px;
+    padding: 5px;
+    display: none;
+  }
+
+  img {
+    margin-left: -10px;
+    width: 150px;
+    height: auto;
+    background-color: #26292A;
+  }
+
+  .card img {
+    margin-left: 1px;
+  }
+
+  .card-container {
+    padding: 0px;
+  }
+  /* Responsive layout - makes a one column layout instead of a two-column layout */
+  @media (max-width: 800px) {
+    nav {
+      flex-direction: column;
+    }
+  }
+
+}

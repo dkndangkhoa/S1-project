@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/signupPage.css">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap'); </style>
+    <title>Sign Up</title>
+</head>
+
+<body>
+
+  <header>
+
+      <!--Here we start with the navigation bar for the acount page-->
+          <nav>
+
+              <div class="nav-container">
+
+                <a href="index.html" class="logo">
+                  <img src="images/logoFrame.png" alt="logo">
+                </a>
+
+                <!-- This for is for the search bar-->
+                <form>
+                  <input type="text" placeholder="What brought you here today?">
+                </form>
+
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="eventPage2.html">Events</a></li>
+                  <li><a href="devices.html">Devices</a></li>
+                  <li><a href="policyPagenologin.html">Policy</a></li>
+                  <li><a href="about.html">About us</a></li>
+                </ul>
+
+                <!--Making a div out of account since it will be in the right corner contained in a box with an avatar next to it-->
+                <div class="account-container">
+                  <a href="loginPage.html" class="account">Login</a> 
+                </div>
+                <!--navbar seems o move when changing the length of the account-container, will need to change that-->
+              </div>
+
+            </nav>
+
+  </header>
+
+  <main>
+
+    <div class="back-rectangle">
+
+        <div class="front-rectangle">
+
+          <!--to get the second part pink-->
+          <h1>Sign <span class="pink">Up</span></h1>
+
+          <!--this is the middle rectangle-->
+          <div class="signupcontainer">
+
+            <div class="inputcontainer">
+              <p>Name</p>
+              <input type="text" placeholder="Your name">
+            </div>
+
+            <div class="inputcontainer">
+              <p>Date of Birth</p>
+              <input type="text" placeholder="DD/MM/YYYY">
+            </div>
+
+            <div class="inputcontainer">
+              <p>Phone Number</p>
+              <input type="text" placeholder="Your phone number">
+            </div>
+
+            <div class="inputcontainer">
+              <p>Email Address</p>
+              <input type="text" placeholder="Your email address">
+            </div>
+
+            <div class="inputcontainer">
+              <p>Password</p>
+              <input type="password" placeholder="Password">
+            </div>
+
+            <div class="privacypolicy">
+              <input type="checkbox" id="privacypolicycheckbox">
+              <label for="privacypolicycheckbox">I agree with the <a href="policyPagenologin.html">privacy policy</a></label>
+            </div>
+            
+            <!--need to add page that the button links to-->
+            <div class="signupbutton">
+              <a href="accountPaageaftersignup.html">Sign Up</a>
+            </div>
+
+          </div>
+
+        </div>
+
+    </div>
+
+  </main>
+
+</body>
+
+</html>

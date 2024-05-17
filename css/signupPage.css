@@ -1,0 +1,273 @@
+*{
+    font-family: 'Arimo', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    background-color: #1F2122;
+    
+}
+
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 7.915567282321899vh;
+    width: 99%;
+}
+  
+.logo {
+    margin-left: 4.625rem;
+    margin-right: auto;
+}
+  
+.logo img {
+    height: 100px;
+    width: 100px;
+}
+/*editing the search bar*/
+form {
+    background-color: #26292a;
+    border-radius: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    min-width: 19.020833333333334vw;
+    max-width: 200px;
+}
+
+::placeholder {
+    color: #9c9c9c;
+}
+  
+input[type="text"] {
+    min-width: 19.020833333333334vw;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    padding: 0 10px;
+    font-size: 0.875rem;
+    color: #9c9c9c;
+}
+
+/*this was added for the sign-up page*/
+input[type="password"] {
+    width: 300px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    padding: 0 10px;
+    font-size: 0.875rem;
+    color: #9c9c9c;
+}
+
+/*the following is used to remove the white outline of the form box that appears when typing in it*/
+textarea:focus, input:focus{
+    outline: none;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+  
+li {
+    margin-right: 20px;
+}
+  
+/*In order to make "Main" have the signature pinkish color we do the folowing*/
+li:first-child a {
+    color: #D62562;
+}
+
+a {
+    color: #9c9c9c;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* here follows the account container*/
+
+.account-container {
+    display: flex;
+    align-items: center;
+    margin-right: 90px;
+    margin-left: 20px;
+    background-color: #26292a;
+    border-radius: 50px;
+    padding: 6px;
+}
+  
+.account-container .account {
+    padding: 2px;
+    color: #9c9c9c;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+
+/*From here on out, we are dealing with everything under the navbar*/
+
+main {
+    margin: 0;
+    
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-rectangle {
+    background-color: #26292A;
+    border-radius: 40px;
+    width: 90%;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.front-rectangle {
+    background-color: #1F2122;
+    color: white;
+    border-radius: 40px;
+    width: 95%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*everything in the middle comes now*/
+h1 .pink {
+  color: #BA2649;
+  
+}
+
+.signupcontainer {
+  width: 37%;
+  height: 550px;
+  border-radius: 40px;
+  background-color: #26292a;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.inputcontainer {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .01em;
+}
+
+/*this is for the inside of the input boxes*/
+.inputcontainer p {
+  margin-bottom: 0;
+  font-size: x-large;
+}
+
+.inputcontainer input {
+  width: 80%;
+  padding: 5px;
+  border-radius: 50px;
+  background-color: #666666;
+  text-align: center;
+}
+
+.signupbutton a {
+  display: block;
+  width: 80%;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: #BA2649;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  margin-top: .5em;
+}
+
+.privacypolicy {
+  display: flex;
+  align-items: center;
+  margin: .5em;
+}
+
+.privacypolicy a {
+  color: #BA2649;
+  text-decoration: underline;
+
+}
+
+@media (max-width: 790px) {
+    /*Adjust the width of nav-container and align element center */
+    .nav-container {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .signupcontainer {
+        width: 90%;
+        background-color: transparent;
+        padding: 10px;
+    }
+    .front-rectangle {
+        width: 95%;
+        height: 95%;
+        padding: 20px;
+    }
+
+    .back-rectangle {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+
+    label {
+        padding-top: 15px;
+    }
+
+    form input[type="text"] {
+        display: none;
+
+    }
+
+    .logo img {
+        margin-left: 50px;
+    }
+    .account-container {
+        display: none;
+    }
+}
+
+@media (min-width: 1000px) {
+    /*Keep the width of nav-container to not change after 1000px*/
+    body {
+        min-width: 100vw;
+        margin: 0 auto;
+    }
+
+    form {
+        max-width: 200px;
+    }
+
+    form input[type="text"] {
+        max-width: 200px;
+        height: 30px;
+        border: none;
+        background-color: transparent;
+        padding: 0 10px;
+        font-size: 0.875rem;
+        color: #9c9c9c;
+    }
+
+}
